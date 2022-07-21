@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/Main Menus/Advanced Search Filters.htm'],s:['2xl'],p:[['2xl',1],['information',40],['they',8]]});

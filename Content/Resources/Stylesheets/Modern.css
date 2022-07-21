@@ -1,0 +1,1612 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta />*/
+
+body
+{
+	font-family: Arial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	font-weight: bold;
+	color: #749AB6;
+}
+
+p.example
+{
+	color: #546C7F;
+	border: solid 1px #BECFDC;
+	background-color: #DEE8F0;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 14px 20px;
+}
+
+p.note
+{
+	color: #616E14;
+	border: solid 1px #BFD62F;
+	background-color: #DAE691;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 14px 20px;
+}
+
+a
+{
+	
+}
+
+MadCap|expanding
+{
+	mc-open-image: url('resources:Images/WebHelp/minus.png');
+	mc-closed-image: url('resources:Images/WebHelp/plus.png');
+	mc-image-position: left;
+}
+
+MadCap|dropDown
+{
+	mc-open-image: url('resources:Images/WebHelp/minus.png');
+	mc-closed-image: url('resources:Images/WebHelp/plus.png');
+}
+
+MadCap|toggler
+{
+	mc-open-image: url('resources:Images/WebHelp/minus.png');
+	mc-closed-image: url('resources:Images/WebHelp/plus.png');
+	color: inherit;
+}
+
+MadCap|popupHead
+{
+	color: #5B8EC1;
+}
+
+MadCap|popupBody
+{
+	color: #EBEBEB;
+	border: none;
+	background-color: rgba(0, 0, 0, .85);
+	padding: 11px 15px;
+}
+
+MadCap|glossaryTerm
+{
+	color: #002088;
+	font-weight: 600;
+}
+
+MadCap|glossaryTerm.Expanding
+{
+	font-weight: inherit;
+	color: #002088;
+}
+
+MadCap|glossaryTerm.Hyperlink
+{
+	color: #5B8EC1;
+	font-weight: inherit;
+}
+
+MadCap|glossaryTerm.Popup
+{
+	color: #5B8EC1;
+	font-weight: normal;
+}
+
+MadCap|conceptLink
+{
+	color: #000000;
+}
+
+MadCap|keywordLink
+{
+	color: #000000;
+}
+
+MadCap|relatedTopics
+{
+	color: #000000;
+}
+
+MadCap|helpControlMenu
+{
+	color: #707070;
+	background-color: #FFFFFF;
+	border: none;
+}
+
+MadCap|helpControlMenuItem
+{
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+MadCap|helpControlMenuItem.Highlighted
+{
+	color: #000000;
+	background-color: #E5EFF7;
+}
+
+h1.JMPT
+{
+	border-bottom: solid 2px;
+	border-bottom-width: 0px;
+	color: #002060;
+	font-family: 'Segoe UI';
+	font-size: 1.8em;
+	margin: 0;
+	margin-bottom: 8px;
+	margin-left: -17px;
+	margin-right: -17px;
+	padding: 10px;
+	padding-left: 20px;
+	width: 100%;
+}
+
+h2.JMPT
+{
+	color: #002060;
+	font-family: 'Segoe UI';
+	font-size: 2em;
+	page-break-after: avoid;
+	mc-hyphenate: never;
+	margin-bottom: 0.83em;
+	margin-top: 0.83em;
+	margin: 0.83em 0em;
+}
+
+div.table
+{
+	page-break-inside: avoid;
+}
+
+p.Reports_Guidance
+{
+	color: #002060;
+	font-weight: bold;
+	font-size: 1.35em;
+}
+
+h4
+{
+	orphans: 3;
+}
+
+@media print
+{
+	h1.JMPT
+	{
+		border-bottom: solid 0px;
+		font-weight: normal;
+		line-height: 18pt;
+		margin-bottom: 35px;
+		margin-top: 35px;
+		mc-auto-number-class: ChapAutoNumJMPT;
+		mc-auto-number-position: float-left;
+		padding-left: 0px;
+		padding-top: 0px;
+		text-transform: none;
+		top: 0px;
+		vertical-align: baseline;
+		border-top: solid 0px;
+		font-size: 18pt;
+		mc-auto-number-format: 'CH:Chapter {chapnum}  ';
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	h2.JMPT
+	{
+		border-top: ridge 2px #696969;
+		margin-bottom: 0.83em;
+		margin-top: 0.83em;
+		padding-top: 1em;
+		font-family: 'Segoe UI';
+		font-size: 18pt;
+	}
+
+	h5.JMPT
+	{
+		page-break-after: avoid;
+		margin-bottom: 1em;
+		padding-top: 1em;
+		font-size: 12pt;
+		font-family: 'Segoe UI';
+	}
+
+	p.JMPT
+	{
+		
+	}
+
+	p.noteJMPT
+	{
+		background-color: #dae691;
+		border-bottom-color: #bfd62f;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-left-color: #bfd62f;
+		border-right-color: #bfd62f;
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-color: #bfd62f;
+		border-top-style: solid;
+		border-top-width: 1px;
+		color: #000000;
+		font-family: 'Segoe UI';
+		font-size: 10pt;
+		padding-bottom: 14px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 14px;
+		border-top-left-radius: 20 px;
+		border-top-right-radius: 20 px;
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		-webkit-border-radius: 1 px;
+		-moz-border-radius: 1 px;
+		border-radius: 6px;
+	}
+
+	p.tablecaption
+	{
+		display: block;
+		mc-auto-number-format: 'CT: {b}Table {chapnum}-{n+}: {/b}';
+		font-size: 10pt;
+	}
+
+	p.imagecaption
+	{
+		display: block;
+		mc-auto-number-format: 'CF: {b}Figure {chapnum}-{n+}: {/b}';
+		font-size: 10pt;
+	}
+
+	td.JMPT
+	{
+		
+	}
+
+	h3.JMPT
+	{
+		padding-top: 1em;
+		font-size: 18pt;
+		border-top: ridge 2px #696969;
+		font-family: 'Segoe UI';
+	}
+
+	p.Heading
+	{
+		font-size: 28pt;
+		color: 002060;
+	}
+
+	MadCap|tocProxy.JMPT
+	{
+		border-top-width: 0px;
+	}
+
+	h3.SSP
+	{
+		font-size: 1.5em;
+		margin-left: 0.25px;
+	}
+
+	img
+	{
+		max-width: 6in;
+		margin-left: 0px;
+	}
+
+	h4.JMPT
+	{
+		mc-heading-level: 4;
+		page-break-after: avoid;
+		padding-top: 1em;
+		margin-top: 1.12em;
+		margin-bottom: 1em;
+		font-family: 'Segoe UI';
+		orphans: 2;
+		font-size: 13pt;
+	}
+
+	h4
+	{
+		
+	}
+
+	h5.JMPTbreakbefore
+	{
+		page-break-before: always;
+		font-family: 'Segoe UI';
+		font-size: 12pt;
+	}
+
+	h4.JMPTbreakbefore
+	{
+		page-break-before: always;
+		mc-heading-level: 4;
+		font-family: 'Segoe UI';
+		font-size: 13pt;
+	}
+
+	h3.JMPTbreakbefore
+	{
+		page-break-before: always;
+		font-size: 18pt;
+		border-top-color: #696969;
+		border-top: ridge 2px #696969;
+		padding-top: 1em;
+		font-family: 'Segoe UI';
+	}
+
+	h2.JMPTbreakbefore
+	{
+		page-break-before: always;
+		border-top: ridge 2px #696969;
+		margin-bottom: 0.83em;
+		margin-top: 0.83em;
+		padding-top: 1em;
+		font-family: 'Segoe UI';
+		font-size: 18pt;
+	}
+
+	h5
+	{
+		
+	}
+
+	img.floatleft
+	{
+		margin-right: 0.25in;
+	}
+
+	MadCap|dropDownHead
+	{
+		font-family: 'Segoe UI';
+		font-size: 11pt;
+	}
+
+	MadCap|xref.Refa
+	{
+		mc-format: '{quote}{paratext}{quote} on page {page}';
+	}
+
+	MadCap|xref
+	{
+		mc-format: 'see {quote}{paratext}{quote} on page {page}';
+	}
+
+	MadCap|xref.a
+	{
+		mc-format: '{paratext} on page {page}';
+	}
+
+	div.GlossaryPageTerm
+	{
+		padding-left: 0px;
+		color: #000000;
+	}
+
+	div.GlossaryPageDefinition
+	{
+		padding-left: 0px;
+	}
+
+	a.GlossaryPageTerm
+	{
+		color: #000000;
+	}
+
+	img.indent
+	{
+		margin-left: 0px;
+	}
+
+	img.thumb
+	{
+		max-width: 6.0in;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	img.thumbindent
+	{
+		max-width: 6.0in;
+	}
+
+	p.hidden
+	{
+		display: none;
+	}
+
+	img.report_guidance
+	{
+		max-width: 6.5in;
+	}
+
+	div.ImagesNoFloat
+	{
+		page-break-inside: avoid;
+	}
+
+	p.breakbefore
+	{
+		page-break-before: always;
+		font-size: 1pt;
+	}
+
+	p.ssp
+	{
+		margin-left: 0.25in;
+	}
+
+	p.instruction
+	{
+		page-break-after: avoid;
+		font-style: normal;
+		color: #002670;
+		font-family: 'Segoe UI';
+		font-weight: normal;
+		padding-top: 0.5em;
+		margin-top: 0em;
+		font-size: 12pt;
+		orphans: 3;
+	}
+
+	h6.JMPT
+	{
+		page-break-after: avoid;
+		font-size: 11 pt;
+		font-family: 'Segoe UI';
+	}
+
+	div.table
+	{
+		page-break-inside: auto;
+	}
+
+	p.Heading2
+	{
+		margin-bottom: 1.12 em;
+		font-weight: bold;
+		font-family: 'Segoe UI';
+		font-size: 14pt;
+		orphans: 3;
+	}
+
+	p.keepwithnext
+	{
+		page-break-after: avoid;
+	}
+
+	h2
+	{
+		font-size: 14pt;
+	}
+
+	h3
+	{
+		font-size: 12 pt;
+	}
+
+	p.background
+	{
+		background-color: #dcdcdc;
+	}
+
+	div.background
+	{
+		border-radius: 2px;
+		padding: 8px;
+		padding-bottom: 8px;
+		padding-top: 8px;
+		border-color: #696969;
+		border: inset 2px #696969;
+		background-color: #f4f4f4;
+	}
+
+	p.Reports_Guidance
+	{
+		font-size: 14pt;
+	}
+
+	p.indent
+	{
+		margin-bottom: 0em;
+		margin-top: 0em;
+		margin: 0em;
+		margin-left: 40px;
+	}
+
+	MadCap|xref.figure
+	{
+		mc-format: '{paranumonly}';
+	}
+
+	li.keep_with_next
+	{
+		page-break-after: avoid;
+	}
+
+	div.breakbefore
+	{
+		page-break-before: always;
+	}
+
+	p.imagecaptionRA
+	{
+		mc-auto-number-format: 'CF: {b}Figure {n+}: {/b}';
+		font-size: 10pt;
+	}
+}
+
+@media non-print
+{
+	h1.JMPT
+	{
+		mc-auto-number-format: 'Chapter {chapnum}';
+		padding-top: 65px;
+		margin-left: 0px;
+		padding-left: 15px;
+		margin-right: 0px;
+		margin-bottom: 0.75em;
+		margin-top: 0.75em;
+	}
+
+	h3.JMPT
+	{
+		font-size: 2em;
+		padding-top: 65px;
+		font-family: 'Trebuchet MS';
+	}
+
+	div.ImagesNoFloat
+	{
+		
+	}
+
+	p.imagecaption
+	{
+		display: block;
+		font-size: 95%;
+		margin-top: 0.8em;
+		padding-left: 15px;
+	}
+
+	div.upper_logo
+	{
+		right: 0px;
+		top: 0px;
+		position: fixed;
+		padding-top: 0px;
+		margin-top: 0px;
+		padding-left: 0px;
+		padding: 0px;
+	}
+
+	MadCap|breadcrumbsProxy
+	{
+		font-family: 'Segoe UI';
+		position: fixed;
+		left: 0px;
+		margin: 0px;
+		padding-left: 20px;
+		right: 0px;
+		top: 0px;
+		margin-bottom: 10px;
+		padding-top: 20px;
+		background-color: #ffffff;
+		border-bottom-width: 1px;
+		padding-bottom: 25px;
+		width: 88%;
+		padding-right: 10px;
+	}
+
+	h2.JMPT
+	{
+		left: 0px;
+		width: 85%;
+		margin-top: 0.75em;
+		padding-top: 65px;
+		font-family: 'Trebuchet MS';
+	}
+
+	img
+	{
+		height: auto;
+		max-width: 100%;
+	}
+
+	h5
+	{
+		padding-left: 15px;
+	}
+
+	h5.JMPT
+	{
+		font-size: 1.15em;
+		font-family: 'Trebuchet MS';
+		page-break-after: avoid;
+		padding-top: 0px;
+	}
+
+	b.JMPT
+	{
+		
+	}
+
+	b
+	{
+		
+	}
+
+	h2.JMPTbreakbefore
+	{
+		padding-top: 65px;
+		font-family: 'Trebuchet MS';
+	}
+
+	MadCap|bodyProxy
+	{
+		margin-top: 100px;
+	}
+
+	body
+	{
+		top: 100px;
+		margin-top: 0px;
+		margin-left: 0px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		padding-top: 0px;
+		margin-right: 5px;
+		padding-left: 0px;
+		font-family: 'Segoe UI';
+		font-size: 100%;
+	}
+
+	h3.JMPTbreakbefore
+	{
+		padding-top: 65px;
+		font-family: 'Trebuchet MS';
+	}
+
+	h4.JMPT
+	{
+		font-family: 'Trebuchet MS';
+		page-break-after: avoid;
+		padding-top: 0px;
+	}
+
+	h4.JMPTbreakbefore
+	{
+		font-family: 'Trebuchet MS';
+		page-break-after: avoid;
+		padding-top: 65px;
+		margin-top: 1.12em;
+	}
+
+	MadCap|breadcrumbsProxy.intable
+	{
+		border-bottom-width: 0px;
+		position: relative;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		width: 90%;
+		font-family: 'Trebuchet MS';
+		background-color: #f1f3f6;
+		font-size: 1.3em;
+	}
+
+	p
+	{
+		font-size: 100%;
+		padding-left: 15px;
+	}
+
+	p.JMPT
+	{
+		font-size: 100%;
+	}
+
+	li
+	{
+		font-family: 'Segoe UI';
+		font-size: 100%;
+		padding-left: 5px;
+	}
+
+	table.fixed
+	{
+		padding-right: 5px;
+		font-size: 95%;
+		background-color: #f1f3f6;
+	}
+
+	p.noteJMPT
+	{
+		margin-left: 15px;
+		font-size: 95%;
+		border-radius: 6 px;
+		border-left-width: 1px;
+	}
+
+	h5.JMPTbreakbefore
+	{
+		font-family: 'Trebuchet MS';
+		page-break-after: avoid;
+		font-size: 1.15em;
+		padding-top: 0px;
+	}
+
+	MadCap|dropDownHead
+	{
+		padding-left: 15px;
+		font-size: 110%;
+		color: #000000;
+		padding-top: 10px;
+	}
+
+	MadCap|dropDownHotspot
+	{
+		color: #034489;
+	}
+
+	a:active
+	{
+		color: #0000ff;
+	}
+
+	a.MCBreadcrumbsLink
+	{
+		color: #5b8ec1;
+	}
+
+	a.GlossaryPageTerm:active
+	{
+		color: #0c59a6;
+	}
+
+	h6.JMPT
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	p.tablecaption
+	{
+		font-size: 95%;
+		display: block;
+		padding-left: 0px;
+	}
+
+	td.JMPT
+	{
+		font-size: 100%;
+	}
+
+	table
+	{
+		font-size: 95%;
+		padding-left: 15px;
+	}
+
+	h1
+	{
+		padding-left: 15px;
+	}
+
+	h2
+	{
+		padding-left: 15px;
+	}
+
+	h3
+	{
+		padding-left: 15px;
+	}
+
+	h4
+	{
+		padding-left: 15px;
+	}
+
+	h6
+	{
+		padding-left: 15px;
+	}
+
+	tbody
+	{
+		
+	}
+
+	div.table
+	{
+		padding-left: 15px;
+		padding-bottom: 15px;
+		page-break-after: avoid;
+	}
+
+	p.tabledescription
+	{
+		padding-left: 0px;
+		page-break-after: avoid;
+	}
+
+	ol
+	{
+		padding-left: 15px;
+	}
+
+	ul
+	{
+		padding-left: 15px;
+	}
+
+	a:link
+	{
+		color: #0000ff;
+	}
+
+	a:visited
+	{
+		color: #800080;
+	}
+
+	img.imagemap
+	{
+		left: 0%;
+	}
+
+	a.GlossaryPageTerm:link
+	{
+		color: #0c59a6;
+	}
+
+	a.GlossaryPageTerm
+	{
+		padding-left: 15px;
+		color: #0c59a6;
+	}
+
+	div.GlossaryPageDefinition
+	{
+		font-size: 100%;
+		padding-left: 20px;
+		color: #000000;
+	}
+
+	div.GlossaryPageHeading
+	{
+		margin-top: 0pt;
+	}
+
+	div.GlossaryPageTerm
+	{
+		padding-left: 0px;
+		font-size: 110%;
+		color: #0c59a6;
+	}
+
+	MadCap|glossaryTerm.Hyperlink
+	{
+		color: #002060;
+	}
+
+	MadCap|glossaryTerm.Popup
+	{
+		color: #002080;
+	}
+
+	div.GlossaryPageEntry
+	{
+		
+	}
+
+	a.GlossaryPageTerm:visited
+	{
+		color: #800080;
+	}
+
+	MadCap|dropDownHead.nested
+	{
+		margin-left: 15px;
+		color: #000000;
+		font-size: 100%;
+		padding-top: 10px;
+	}
+
+	p.dropdownheadindent
+	{
+		padding-left: 40px;
+	}
+
+	img.indent
+	{
+		margin-left: 45px;
+	}
+
+	img.thumbindent
+	{
+		padding-right: 15px;
+		padding-left: 50px;
+	}
+
+	MadCap|miniTocProxy
+	{
+		
+	}
+
+	div
+	{
+		page-break-inside: avoid;
+	}
+
+	a.GlossaryPageTerm:hover
+	{
+		color: #5b8ec1;
+	}
+
+	a.GlossaryPageTerm:focus
+	{
+		color: #5b8ec1;
+	}
+
+	MadCap|dropDownHotspot:focus
+	{
+		color: #5b8ec1;
+	}
+
+	MadCap|dropDownHotspot:hover
+	{
+		color: #5b8ec1;
+	}
+
+	MadCap|xref.a:focus
+	{
+		color: #0000ff;
+	}
+
+	MadCap|xref.a:hover
+	{
+		color: #5b8ec1;
+	}
+
+	MadCap|xref.Refa:hover
+	{
+		color: #5b8ec1;
+	}
+
+	MadCap|glossaryTerm.Expanding:focus
+	{
+		color: #5b8ec1;
+	}
+
+	MadCap|glossaryTerm.Hyperlink:hover
+	{
+		color: #5b8ec1;
+	}
+
+	MadCap|xref:hover
+	{
+		color: #5b8ec1;
+	}
+
+	MadCap|glossaryTerm.Expanding:hover
+	{
+		color: #5b8ec1;
+	}
+
+	MadCap|glossaryTerm:focus
+	{
+		color: #5b8ec1;
+	}
+
+	MadCap|glossaryTerm:hover
+	{
+		color: #5b8ec1;
+	}
+
+	a:focus
+	{
+		color: #5b8ec1;
+	}
+
+	a:hover
+	{
+		color: #5b8ec1;
+	}
+
+	p.hidden
+	{
+		display: none;
+	}
+
+	MadCap|topicToolbarProxy
+	{
+		border-color: #a9a9a9;
+		border-radius: 5px;
+		border: solid 0px;
+	}
+
+	p.topictoolbarspace
+	{
+		font-size: 50%;
+		margin: 0.5em;
+	}
+
+	MadCap|topicToolbarProxy.top
+	{
+		font-family: 'Segoe UI';
+		font-size: 100%;
+		margin-top: 15%;
+	}
+
+	h1.other
+	{
+		padding-top: 65px;
+		font-family: 'Trebuchet MS';
+	}
+
+	p.ssp
+	{
+		margin-left: 0.25in;
+	}
+
+	div.tablessp
+	{
+		margin-left: .25in;
+	}
+
+	p.instruction
+	{
+		font-style: normal;
+		page-break-after: avoid;
+		font-weight: normal;
+		color: #034489;
+		font-size: 105%;
+	}
+
+	MadCap|dropDownHead.nested2
+	{
+		font-size: 100;
+		margin-left: 30px;
+		padding-left: 30px;
+		padding-top: 10px;
+	}
+
+	p.Heading2
+	{
+		font-family: 'Segoe UI';
+		font-weight: normal;
+		font-size: 125%;
+	}
+
+	p.background
+	{
+		background-color: #dcdcdc;
+	}
+
+	div.background
+	{
+		padding-bottom: 5px;
+		border-radius: 2px;
+		margin-bottom: 15px;
+		padding-top: 0px;
+		padding: 0px 5px 5px 0px;
+		margin: 10px 10px 10px 15px;
+		border: double 2px #808080;
+		background-color: #f4f4f4;
+		margin-left: 10px;
+	}
+
+	p#Reports_Guidance
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	p.Reports_Guidance
+	{
+		font-family: 'Trebuchet MS';
+		font-size: 1.35em;
+	}
+
+	p.indent
+	{
+		margin-bottom: 0em;
+		margin-top: 0em;
+		margin: 0em;
+		margin-left: 40px;
+	}
+
+	img.thumb
+	{
+		mc-thumbnail: popup;
+	}
+
+	div.breakbefore
+	{
+		
+	}
+}
+
+h3.JMPT
+{
+	color: #002060;
+	font-family: 'Segoe UI';
+	page-break-after: avoid;
+	font-size: 2em;
+}
+
+h4.JMPT
+{
+	color: #002060;
+	font-family: 'Segoe UI';
+	font-size: 1.35em;
+}
+
+h5.JMPT
+{
+	color: #002060;
+	font-family: 'Segoe UI';
+	font-size: 1.15em;
+	page-break-after: avoid;
+}
+
+p.JMPT
+{
+	font-family: 'Segoe UI';
+	font-size: 11pt;
+}
+
+p.tablecaption
+{
+	clear: both;
+	display: none;
+	font-family: 'Segoe UI';
+	font-size: 10pt;
+	font-style: italic;
+	padding-top: 15px;
+	page-break-after: avoid;
+}
+
+p.imagecaption
+{
+	clear: both;
+	font-family: 'Segoe UI';
+	font-style: italic;
+	padding-bottom: 15px;
+	page-break-before: avoid;
+	font-size: 11pt;
+}
+
+td.JMPT
+{
+	font-family: 'Segoe UI';
+	font-size: 11pt;
+	vertical-align: top;
+}
+
+p
+{
+	font-family: 'Segoe UI';
+	font-size: 11pt;
+	orphans: 2;
+}
+
+li
+{
+	font-family: 'Segoe UI';
+	font-size: 11pt;
+}
+
+p.noteJMPT
+{
+	background-color: #dae691;
+	border: solid 1px;
+	border-bottom-color: #bfd62f;
+	border-left-color: #bfd62f;
+	border-radius: 6 px;
+	border-right-color: #bfd62f;
+	border-top-color: #bfd62f;
+	color: #000000;
+	font-size: 10pt;
+	padding-bottom: 14px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 14px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20 px;
+	-webkit-border-radius: 1 px;
+	-moz-border-radius: 1 px;
+}
+
+p.indent
+{
+	margin-left: 35px;
+	margin: 0em;
+}
+
+div.ImagesNoFloat
+{
+	page-break-inside: avoid;
+}
+
+p.Heading
+{
+	font-size: 28pt;
+	color: #002060;
+}
+
+h1.other
+{
+	color: #002060;
+	font-family: 'Segoe UI';
+	margin: 1.12em;
+	margin-left: 0em;
+	margin-right: 0em;
+	mc-leader-indent: 5pt;
+	column-break-after: avoid;
+}
+
+h3.SSP
+{
+	color: #002060;
+	font-family: 'Segoe UI';
+	page-break-after: avoid;
+	font-size: 1.5em;
+}
+
+div.upper_logo
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+MadCap|breadcrumbsProxy
+{
+	font-family: 'Segoe UI';
+	width: 85%;
+	margin-bottom: 10px;
+	padding-bottom: 40px;
+}
+
+b.JMPT
+{
+	font-family: 'Segoe UI';
+	font-size: 11pt;
+}
+
+MadCap|glossaryProxy
+{
+	font-family: 'Segoe UI';
+}
+
+div.GlossaryPageDefinition
+{
+	font-family: 'Segoe UI';
+	font-size: 11pt;
+	padding-left: 15px;
+	margin-left: 15px;
+}
+
+div.GlossaryPageTerm
+{
+	font-family: 'Segoe UI';
+	font-size: 12pt;
+	padding-left: 15px;
+	color: #002080;
+}
+
+h5.JMPTbreakbefore
+{
+	color: #002060;
+	font-family: 'Segoe UI';
+	font-size: 1.15em;
+}
+
+h4.JMPTbreakbefore
+{
+	color: #002060;
+	font-family: 'Segoe UI';
+	font-size: 1.35em;
+}
+
+h3.JMPTbreakbefore
+{
+	color: #002060;
+	font-family: 'Segoe UI';
+	font-size: 2em;
+	page-break-after: avoid;
+}
+
+h2.JMPTbreakbefore
+{
+	color: #002060;
+	font-family: 'Segoe UI';
+	font-size: 2em;
+	page-break-after: avoid;
+	margin-bottom: 0.83em;
+	margin-top: 0.83em;
+	margin: 0.83em 0em;
+}
+
+div.ImagesFloatLeft
+{
+	float: left;
+	page-break-inside: avoid;
+	margin-right: 15px;
+}
+
+p.Clear
+{
+	clear: both;
+	font-size: 4px;
+}
+
+html.imagepopup
+{
+	background-color: #e9eae4;
+	mc-master-page: url('../MasterPages/PopupMasterPage.flmsp');
+	mc-popup-height: auto;
+	mc-popup-width: auto;
+}
+
+p.popupbox
+{
+	font-family: 'Segoe UI';
+	font-weight: normal;
+	font-size: 100%;
+}
+
+img
+{
+	border: none;
+	mc-thumbnail-max-height: 150px;
+}
+
+p.nobreakafter
+{
+	orphans: 2;
+	page-break-after: avoid;
+}
+
+h5
+{
+	color: #002060;
+	font-size: 1.5em;
+}
+
+h6.JMPT
+{
+	color: #002060;
+	font-family: 'Segoe UI';
+	font-size: 1em;
+}
+
+tr
+{
+	mc-hyphenate: never;
+	page-break-inside: avoid;
+}
+
+img.indent
+{
+	margin-left: 45px;
+}
+
+img.floatleft
+{
+	margin-right: 15px;
+	margin-bottom: 15px;
+	float: left;
+}
+
+MadCap|dropDownHead
+{
+	font-family: 'Segoe UI';
+	font-size: 100%;
+}
+
+p.list
+{
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+table
+{
+	mc-hide-bottom-ruling: false;
+	font-size: 11pt;
+	font: Segoe UI;
+	font-family: 'Segoe UI';
+}
+
+th
+{
+	font-size: 12pt;
+}
+
+table.fixed
+{
+	width: 100%;
+	border-spacing: 0px 0px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	position: fixed;
+	background-color: #d3d3d3;
+}
+
+div.mp
+{
+	margin-top: 60px;
+}
+
+MadCap|xref.Refa
+{
+	mc-format: '{paratext}';
+}
+
+img.imagemap
+{
+	position: relative;
+}
+
+MadCap|xref
+{
+	mc-format: 'see {paratext}';
+}
+
+MadCap|xref.a
+{
+	mc-format: '{paratext}';
+}
+
+MadCap|expandingBody
+{
+	color: #5b8ec1;
+}
+
+h2.glossary
+{
+	color: #002060;
+	font-size: 2em;
+	font-family: 'Segoe UI';
+}
+
+div.GlossaryPageHeading
+{
+	margin-top: 20pt;
+}
+
+a.GlossaryPageTerm
+{
+	color: #002060;
+}
+
+MadCap|topicToolbarProxy
+{
+	margin-left: 15px;
+}
+
+img.thumb
+{
+	height: auto;
+	max-width: 100%;
+	mc-thumbnail: popup;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+img.thumbindent
+{
+	mc-thumbnail: popup;
+	max-width: 100%;
+	height: auto;
+}
+
+div
+{
+	
+}
+
+MadCap|miniTocProxy
+{
+	page-break-before: avoid;
+	mc-toc-depth: 4;
+}
+
+div.keeptogether
+{
+	page-break-inside: avoid;
+}
+
+p.hidden
+{
+	display: none;
+}
+
+img.report_guidance
+{
+	
+}
+
+div.indent
+{
+	page-break-inside: avoid;
+	margin-left: 35px;
+}
+
+p.breakbefore
+{
+	
+}
+
+div.tablessp
+{
+	margin-left: 0.25in;
+}
+
+p.instruction
+{
+	margin-top: 1.12em;
+	orphans: 3;
+}
+
+p.Heading2
+{
+	page-break-after: avoid;
+	font-weight: bold;
+	font-size: 1.25em;
+	color: #002060;
+	orphans: 3;
+}
+
+p#Reports_Guidance
+{
+	page-break-after: avoid;
+	font-weight: bold;
+	color: #002060;
+	font-size: 1.35em;
+}
+
+MadCap|xref.figure
+{
+	mc-format: 'Figure {paranumonly}';
+}
+
+MadCap|xref.Table
+{
+	mc-format: '{paranumonly}';
+}
+
+li.keep_with_next
+{
+	
+}
+
+p.imagecaptionRA
+{
+	clear: both;
+	font-family: 'Segoe UI';
+	font-style: italic;
+	padding-bottom: 15px;
+	page-break-before: avoid;
+	font-size: 11pt;
+}
+
